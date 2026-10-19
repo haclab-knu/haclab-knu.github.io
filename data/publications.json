@@ -2,9 +2,21 @@
  "international": [
   {
    "year": 2026,
+   "title": "Asymmetric Branch Execution for Efficient Counterfactual Action Guided Edge VLA Inference",
+   "authors": "Chanyoung Oh",
+   "venue": "Under review",
+   "type": "misc",
+   "venueFull": "IEEE ESL",
+   "tags": [
+    "Under review"
+   ],
+   "note": "Under review"
+  },
+  {
+   "year": 2026,
    "title": "Terrain-Aware Flow Matching for Safe UAV Landing Guidance",
    "authors": "Kwangwoo Jang, Youngjae Kim, Chanyoung Oh, Yangjae Jeong, Gague Kim",
-   "venue": "CoRL 2026",
+   "venue": "Under review",
    "type": "misc",
    "venueFull": "CoRL 2026",
    "tags": [
