@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HAC Lab · High-Performance AI Computing Lab</title>
+<meta name="description" content="HAC Lab at Kongju National University builds AI that runs in real-time on physical edge devices.">
+<meta name="theme-color" content="#0a1020">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=6">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="HAC Lab, High-Performance AI Computing Lab">
+      <span class="logo-m" aria-hidden="true"></span><img class="logo-c" src="assets/logo.png" alt="" width="190" height="37">
+    </a>
+    <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    <nav id="links" class="links">
+      <a href="#research">Research</a><a href="#news">News</a><a href="#pubs">Publications</a>
+      <a href="#members">Members</a><a href="#lectures">Lectures</a><a href="#photo">Photo</a>
+      <a href="#join" class="cta">Join us</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="shade" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow" id="affil">Kongju National University</p>
+      <h1><span class="nb">High&#8209;Performance</span><br><em>AI Computing</em> Lab</h1>
+      <p class="lead" id="intro"></p>
+    </div>
+    <aside class="hud" id="hud" aria-label="HashEye pipeline, animated">
+      <div class="hud-h"><span>HashEye pipeline</span><span class="sim">A demo</span></div>
+      <ol class="steps" id="steps">
+        <li data-s="scan"><b>Scan</b><span>Tiny patches → signatures</span></li>
+        <li data-s="prune"><b>Prune</b><span>Colliding buckets are background</span></li>
+        <li data-s="pack"><b>Rearrange</b><span>Expand in a dense form</span></li>
+        <li data-s="detect"><b>Detect</b><span>Detect and merges split boxes</span></li>
+      </ol>
+      <div class="hud-row"><span>Paper, up to</span><b>97.54 %</b></div>
+      <div class="hud-res"><b>57 ms · 5.25× faster</b> than YOLOv8 on 4K</div>
+      <a class="hud-link" href="https://doi.org/10.1038/s41598-026-51941-w" target="_blank" rel="noopener">HashEye · Sci. Rep. (2026) ↗</a>
+    </aside>
+  </div>
+</section>
+
+<main>
+<section class="sec" id="research">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow">Research</p><h2>Our goal: efficient AI that runs on real hardware.</h2></div>
+    <div class="rx">
+      <div class="rx-tabs" role="tablist" id="rxTabs" aria-label="Research areas"></div>
+      <div class="rx-panel" id="rxPanel" role="tabpanel"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tint" id="news">
+  <div class="wrap">
+    <div class="head"><h2>Latest news</h2></div>
+    <div class="news" id="newsList"></div>
+  </div>
+</section>
+
+<section class="sec" id="pubs">
+  <div class="wrap">
+    <div class="head row">
+      <div><h2>Publications</h2></div>
+      <div class="pub-ctl">
+        <div class="seg" role="tablist" id="pubTabs"></div>
+        <label class="search"><span class="sr">Search publications</span><input id="pubSearch" type="search" placeholder="Search title or author"></label>
+      </div>
+    </div>
+    <div id="pubList"></div>
+    <button class="more-btn" id="pubMore" hidden></button>
+    <p class="empty" id="pubEmpty" hidden>No papers match your search.</p>
+  </div>
+</section>
+
+<section class="sec tint" id="members">
+  <div class="wrap">
+    <div class="head"><h2>Members</h2></div>
+    <div id="pi"></div>
+    <div class="people" id="people"></div>
+  </div>
+</section>
+
+<section class="sec" id="lectures">
+  <div class="wrap">
+    <div class="head"><h2>Lectures</h2></div>
+    <div class="lec" id="lec"></div>
+  </div>
+</section>
+
+<section class="sec tint" id="photo">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow">Photo</p><h2>Life in the lab</h2></div>
+    <div class="show" id="show" tabindex="0" aria-roledescription="carousel" aria-label="Lab photos">
+      <div class="stage" id="stage"></div>
+      <div class="bar"><i id="progress"></i></div>
+      <div class="show-ctl">
+        <button id="prev" aria-label="Previous photo">←</button>
+        <button id="play" aria-pressed="true">Pause</button>
+        <button id="next" aria-label="Next photo">→</button>
+      </div>
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+</section>
+
+<section class="join" id="join">
+  <div class="wrap join-in">
+    <div>
+      <p class="eyebrow">Join us</p>
+      <h2>Build AI that runs<br><em>where it matters.</em></h2>
+      <p id="recruitText"></p>
+    </div>
+    <div class="join-card">
+      <span class="lbl">Send your CV to</span>
+      <code id="joinMail"></code>
+      <button class="btn primary" id="copyMail">Copy email</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="wrap foot-in">
+    <div><span class="logo-m foot-logo" role="img" aria-label="HAC Lab"></span><p id="faddr"></p></div>
+    <div><span class="lbl">Contact</span><p id="fmail"></p></div>
+    <div><span class="lbl">Sections</span><p><a href="#research">Research</a> · <a href="#pubs">Publications</a> · <a href="#members">Members</a> · <a href="#photo">Photo</a></p></div>
+  </div>
+  <div class="wrap copy">© <span id="year"></span> HAC Lab, Kongju National University</div>
+</footer>
+
+<noscript><p style="padding:20px">This site needs JavaScript enabled.</p></noscript>
+<script src="assets/app.js?v=6"></script>
+</body>
+</html>

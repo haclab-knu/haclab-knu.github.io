@@ -1,0 +1,34 @@
+{
+ "pi": {
+  "name": "Chanyoung Oh",
+  "nameKo": "오찬영",
+  "role": "Principal Investigator · Assistant Professor",
+  "dept": "Dept. of Software, Kongju National University",
+  "research": "On-device AI, Physical AI, Heterogeneous Parallel Computing, Embedded Systems",
+  "email": "cyoh@kongju.ac.kr",
+  "photo": "photos/members/profile_oh.jpg"
+ },
+ "students": [
+  {
+   "name": "Hyeonji Hong",
+   "role": "M.S. Student",
+   "email": "hhj@smail.kongju.ac.kr"
+  },
+  {
+   "name": "Nakyeong Lee",
+   "role": "Undergraduate Student (4th year)",
+   "email": "dlskrud468@smail.kongju.ac.kr"
+  },
+  {
+   "name": "Sejin Choi",
+   "role": "Undergraduate Student (4th year)",
+   "email": "marin6670@smail.kongju.ac.kr"
+  },
+  {
+   "name": "Hosu Lee",
+   "role": "Undergraduate Student (3rd year)",
+   "email": "ghtn10000@smail.kongju.ac.kr"
+  }
+ ],
+ "alumni": []
+}

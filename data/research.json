@@ -1,0 +1,81 @@
+[
+ {
+  "area": "Physical AI",
+  "sub": "Robots, drones, UAM",
+  "topic": "Physical agents that perceive and act in real-time, safely, on onboard computers",
+  "projects": [
+   {
+    "title": "대형산불 초기 긴급 대응을 위한 군집 드론 및 운용 기술개발",
+    "sponsor": "Korea Forestry Promotion Institute (한국임업진흥원)",
+    "period": "2025–2026",
+    "role": "Co-PI",
+    "ongoing": true
+   },
+   {
+    "title": "무인 항공 모빌리티를 위한 원거리 객체 탐지 솔루션 개발",
+    "sponsor": "Kongju National University",
+    "period": "2024–2025",
+    "role": "PI"
+   },
+   {
+    "title": "드론 객체 탐지 시각화 기술",
+    "sponsor": "Kongju National University",
+    "period": "2024–2025",
+    "role": "PI"
+   },
+   {
+    "title": "DNA+드론 플랫폼 기술 개발 및 검증",
+    "sponsor": "National Research Foundation of Korea",
+    "period": "2023–2024"
+   }
+  ]
+ },
+ {
+  "area": "On-device AI",
+  "sub": "Efficient AI Inference on Edges/Embedded Systems",
+  "topic": "Energy-efficient AI inference on embedded and mobile platforms",
+  "projects": [
+   {
+    "title": "전원 불안정 감내 자율적 에너지기반 컴퓨팅 시스템SW 원천기술 개발",
+    "sponsor": "IITP",
+    "period": "2023–2024"
+   },
+   {
+    "title": "CPU-GPU 모바일 플랫폼에서 빠르고 에너지-효율적인 희소 신경망 추론을 위한 소프트웨어 프레임워크",
+    "sponsor": "Samsung Future Technology Foundation",
+    "period": "2019–2021"
+   }
+  ]
+ },
+ {
+  "area": "GPU Framework",
+  "sub": "Make everything FAST and EFFICIENT!",
+  "topic": "Programming frameworks that accelerate deep learning and big-data processing",
+  "projects": [
+   {
+    "title": "딥러닝 가속을 위해 태스크 병렬성과 스케줄링을 지원하는 GPU 프레임워크",
+    "sponsor": "National Research Foundation of Korea",
+    "period": "2018–2021"
+   },
+   {
+    "title": "빅데이터 처리 고도화 핵심기술개발 사업 총괄 및 고성능 컴퓨팅 기술을 활용한 성능가속화 기술 개발",
+    "sponsor": "IITP",
+    "period": "2016–2019"
+   }
+  ]
+ },
+ {
+  "area": "AI Applications",
+  "sub": "",
+  "topic": "Applying AI to various real-world problems",
+  "projects": [
+   {
+    "title": "AI 기반 치과 질환 탐지 애플리케이션 개발",
+    "sponsor": "SmileWide Inc. (주식회사 스마일와이드)",
+    "period": "2025–2026",
+    "role": "PI",
+    "ongoing": true
+   }
+  ]
+ }
+]

@@ -1,0 +1,286 @@
+{
+ "international": [
+  {
+   "year": 2026,
+   "title": "Terrain-Aware Flow Matching for Safe UAV Landing Guidance",
+   "authors": "Kwangwoo Jang, Youngjae Kim, Chanyoung Oh, Yangjae Jeong, Gague Kim",
+   "venue": "CoRL 2026",
+   "type": "misc",
+   "venueFull": "CoRL 2026",
+   "tags": [
+    "Under review"
+   ],
+   "note": "Under review"
+  },
+  {
+   "year": 2026,
+   "title": "HashEye: A Real-Time On-Drone High-Resolution Tiny Object Detection via Spatial Pruning",
+   "authors": "Hyeonji Hong, Nakyeong Lee, Kwangwoo Jang, Gague Kim, Yangjae Jeong, Chanyoung Oh*",
+   "venue": "Sci. Rep.",
+   "type": "article",
+   "venueFull": "Scientific Reports",
+   "tags": [
+    "SCI · IF 4.9 · Q1"
+   ],
+   "pdf": "papers/2605_hasheye.pdf",
+   "bibtex": "@article{hong2026hasheye,\n  title={HashEye: a real-time on-drone high-resolution tiny object detection via spatial pruning},\n  author={Hong, Hyeonji and Lee, Nakyeong and Jang, Kwangwoo and Kim, Gague and Jeong, Yangjae and Oh, Chanyoung},\n  journal={Scientific Reports},\n  volume={16},\n  number={1},\n  pages={20918},\n  year={2026},\n  publisher={Springer Science and Business Media LLC},\n  doi={10.1038/s41598-026-51941-w}\n}"
+  },
+  {
+   "year": 2025,
+   "title": "Image Rearrangement for Fast on-Drone Tiny Object Detection",
+   "authors": "Hyeonji Hong, Chanyoung Oh*",
+   "venue": "ICMIC 2025",
+   "type": "inproceedings",
+   "venueFull": "ICMIC 2025",
+   "bibtex": "@inproceedings{hong2025image,\n  title={Image Rearrangement for Fast on-Drone Tiny Object Detection},\n  author={Hong, Hyeonji and Oh, Chanyoung},\n  booktitle={2025 International Conference on Mobile, Military, Maritime IT Convergence (ICMIC)},\n  pages={294--297},\n  year={2025},\n  organization={IEEE},\n  doi={10.1109/icmic66299.2025.11257814}\n}"
+  },
+  {
+   "year": 2025,
+   "title": "MicroForest: Lightweight Bottleneck Prediction for Manufacturing Processes on Edge Devices",
+   "authors": "Seungmin Yoo, Chanyoung Oh*",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "venueFull": "Applied Sciences",
+   "tags": [
+    "SCI · IF 2.9"
+   ],
+   "bibtex": "@article{yoo2025microforest,\n  title={MicroForest: Lightweight Bottleneck Prediction for Manufacturing Processes on Edge Devices},\n  author={Yoo, Seungmin and Oh, Chanyoung},\n  journal={Applied Sciences},\n  volume={15},\n  number={14},\n  pages={7798},\n  year={2025},\n  publisher={MDPI AG},\n  doi={10.3390/app15147798}\n}"
+  },
+  {
+   "year": 2023,
+   "title": "HybridHadoop: CPU-GPU Hybrid Scheduling in Hadoop",
+   "authors": "Chanyoung Oh, Saehanseul Yi, Jongkyu Seok, Hyeonjin Jung, Illo Yoon, Youngmin Yi*",
+   "venue": "Cluster Computing",
+   "type": "article",
+   "venueFull": "Cluster Computing",
+   "tags": [
+    "SCI · IF 5.5 · Q1"
+   ],
+   "bibtex": "@article{oh2024hybridhadoop,\n  title={Hybridhadoop: CPU-GPU hybrid scheduling in hadoop},\n  author={Oh, Chanyoung and Yi, Saehanseul and Seok, Jongkyu and Jung, Hyeonjin and Yoon, Illo and Yi, Youngmin},\n  journal={Cluster Computing},\n  volume={27},\n  number={3},\n  pages={3875--3892},\n  year={2024},\n  publisher={Springer Science and Business Media LLC},\n  doi={10.1007/s10586-023-04178-5}\n}"
+  },
+  {
+   "year": 2023,
+   "title": "Towards Real-Time On-Drone Pedestrian Tracking in 4K Inputs",
+   "authors": "Chanyoung Oh*, Moonsoo Lee, Chaedeok Lim",
+   "venue": "Drones",
+   "type": "article",
+   "venueFull": "Drones",
+   "tags": [
+    "SCI · IF 5.2"
+   ],
+   "bibtex": "@article{oh2023towards,\n  title={Towards Real-Time On-Drone Pedestrian Tracking in 4K Inputs},\n  author={Oh, Chanyoung and Lee, Moonsoo and Lim, Chaedeok},\n  journal={Drones},\n  volume={7},\n  number={10},\n  pages={623},\n  year={2023},\n  publisher={MDPI AG},\n  doi={10.3390/drones7100623}\n}"
+  },
+  {
+   "year": 2021,
+   "title": "Exploiting Activation Sparsity for Fast CNN Inference on Mobile GPUs",
+   "authors": "Chanyoung Oh, Junhyuck So, Sumin Kim, Youngmin Yi*",
+   "venue": "CODES+ISSS 2021",
+   "type": "inproceedings",
+   "venueFull": "CODES+ISSS 2021",
+   "tags": [
+    "ACM TECS"
+   ],
+   "bibtex": "@article{oh2021exploiting,\n  title={Exploiting Activation Sparsity for Fast CNN Inference on Mobile GPUs},\n  author={Oh, Chanyoung and So, Junhyuk and Kim, Sumin and Yi, Youngmin},\n  journal={ACM Transactions on Embedded Computing Systems},\n  volume={20},\n  number={5s},\n  pages={1--25},\n  year={2021},\n  publisher={Association for Computing Machinery (ACM)},\n  doi={10.1145/3477008}\n}"
+  },
+  {
+   "year": 2020,
+   "title": "GOPipe: A Granularity-Oblivious Programming Framework for Pipelined Stencil Executions on GPU",
+   "authors": "Chanyoung Oh, Zhen Zheng, Xipeng Shen*, Jidong Zhai*, Youngmin Yi*",
+   "venue": "PACT 2020",
+   "type": "inproceedings",
+   "venueFull": "PACT 2020",
+   "bibtex": "@inproceedings{oh2020gopipe,\n  title={GOPipe: A Granularity-Oblivious Programming Framework for Pipelined Stencil Executions on GPU},\n  author={Oh, Chanyoung and Zheng, Zhen and Shen, Xipeng and Zhai, Jidong and Yi, Youngmin},\n  booktitle={Proceedings of the ACM International Conference on Parallel Architectures and Compilation Techniques},\n  pages={43--54},\n  year={2020},\n  publisher={ACM},\n  doi={10.1145/3410463.3414656}\n}"
+  },
+  {
+   "year": 2020,
+   "title": "BPNet: branch-pruned conditional neural network for systematic time-accuracy tradeoff",
+   "authors": "Kyungchul Park, Chanyoung Oh, Youngmin Yi*",
+   "venue": "DAC 2020",
+   "type": "inproceedings",
+   "venueFull": "DAC 2020",
+   "bibtex": "@inproceedings{park2020bpnet,\n  title={BPNet: Branch-pruned Conditional Neural Network for Systematic Time-accuracy Tradeoff},\n  author={Park, Kyungchul and Oh, Chanyoung and Yi, Youngmin},\n  booktitle={2020 57th ACM/IEEE Design Automation Conference (DAC)},\n  pages={1--6},\n  year={2020},\n  organization={IEEE},\n  doi={10.1109/dac18072.2020.9218545}\n}"
+  },
+  {
+   "year": 2020,
+   "title": "Towards Real-time CNN Inference from a Video Stream on a Mobile GPU",
+   "authors": "Chanyoung Oh, Gunjoo Park, Sumin Kim, Dohee Kim, Youngmin Yi*",
+   "venue": "LCTES 2020",
+   "type": "inproceedings",
+   "venueFull": "LCTES 2020",
+   "bibtex": "@inproceedings{oh2020towards,\n  title={Towards Real-time CNN Inference from a Video Stream on a Mobile GPU (WiP Paper)},\n  author={Oh, Chanyoung and Park, Gunju and Kim, Sumin and Kim, Dohee and Yi, Youngmin},\n  booktitle={The 21st ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems},\n  pages={136--140},\n  year={2020},\n  publisher={ACM},\n  doi={10.1145/3372799.3394366}\n}"
+  },
+  {
+   "year": 2019,
+   "title": "HiWayLib: A Software Framework for Enabling High Performance Communications for Heterogeneous Pipeline Computations",
+   "authors": "Zhen Zheng, Chanyoung Oh, Jidong Zhai*, Xipeng Shen, Youngmin Yi, Wenguang Chen",
+   "venue": "ASPLOS 2019",
+   "type": "inproceedings",
+   "venueFull": "ASPLOS 2019",
+   "bibtex": "@inproceedings{zheng2019hiwaylib,\n  title={HiWayLib: A Software Framework for Enabling High Performance Communications for Heterogeneous Pipeline Computations},\n  author={Zheng, Zhen and Oh, Chanyoung and Zhai, Jidong and Shen, Xipeng and Yi, Youngmin and Chen, Wenguang},\n  booktitle={Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems},\n  pages={153--166},\n  year={2019},\n  publisher={ACM},\n  doi={10.1145/3297858.3304032}\n}"
+  },
+  {
+   "year": 2018,
+   "title": "Distributed Video Decoding on Hadoop",
+   "authors": "Illo Yoon, Saehanseul Yi, Chanyoung Oh, Hyeonjin Jung, Youngmin Yi*",
+   "venue": "IEICE Trans. Info. & Sys.",
+   "type": "article",
+   "venueFull": "IEICE Transations on Infomations & Systems",
+   "tags": [
+    "SCI"
+   ],
+   "bibtex": "@article{yoon2018distributed,\n  title={Distributed Video Decoding on Hadoop},\n  author={Yoon, Illo and Yi, Saehanseul and Oh, Chanyoung and Jung, Hyeonjin and Yi, Youngmin},\n  journal={IEICE Transactions on Information and Systems},\n  volume={E101.D},\n  number={12},\n  pages={2933--2941},\n  year={2018},\n  publisher={Institute of Electronics, Information and Communications Engineers (IEICE)},\n  doi={10.1587/transinf.2018pap0014}\n}"
+  },
+  {
+   "year": 2018,
+   "title": "Real-Time and Energy-Efficient Face Detection on CPU-GPU Heterogeneous Embedded Platforms",
+   "authors": "Chanyoung Oh, Saehanseul Yi, Youngmin Yi*",
+   "venue": "IEICE Trans. Info. & Sys.",
+   "type": "article",
+   "venueFull": "IEICE Trans. Info. & Sys.",
+   "tags": [
+    "SCI"
+   ],
+   "bibtex": "@article{oh2018real,\n  title={Real-Time and Energy-Efficient Face Detection on CPU-GPU Heterogeneous Embedded Platforms},\n  author={Oh, Chanyoung and Yi, Saehanseul and Yi, Youngmin},\n  journal={IEICE Transactions on Information and Systems},\n  volume={E101.D},\n  number={12},\n  pages={2878--2888},\n  year={2018},\n  publisher={Institute of Electronics, Information and Communications Engineers (IEICE)},\n  doi={10.1587/transinf.2018pap0004}\n}"
+  },
+  {
+   "year": 2018,
+   "title": "GPU-accelerated Boussinesq model using compute unified device architecture FORTRAN",
+   "authors": "Boram Kim, Chanyoung Oh, Youngmin Yi, Daehong Kim*",
+   "venue": "Journal of Coastal Research",
+   "type": "article",
+   "venueFull": "Journal of Coastal Research",
+   "tags": [
+    "SCI"
+   ],
+   "bibtex": "@article{kim2018gpu,\n  title={GPU-Accelerated Boussinesq Model Using Compute Unified Device Architecture FORTRAN},\n  author={Kim, Boram and Oh, Chanyoung and Yi, Youngmin and Kim, Dae-Hong},\n  journal={Journal of Coastal Research},\n  volume={85},\n  pages={1176--1180},\n  year={2018},\n  publisher={Coastal Education and Research Foundation},\n  doi={10.2112/si85-236.1}\n}"
+  },
+  {
+   "year": 2017,
+   "title": "VersaPipe: A Versatile Programming Framework for Pipelined Computing on GPU",
+   "authors": "Zhen Zheng, Chanyoung Oh, Jidong Zhai*, Xipeng Shen*, Youngmin Yi*, Wenguang Chen",
+   "venue": "MICRO 2017",
+   "type": "inproceedings",
+   "venueFull": "MICRO 2017",
+   "bibtex": "@inproceedings{zheng2017versapipe,\n  title={Versapipe: a versatile programming framework for pipelined computing on GPU},\n  author={Zheng, Zhen and Oh, Chanyoung and Zhai, Jidong and Shen, Xipeng and Yi, Youngmin and Chen, Wenguang},\n  booktitle={Proceedings of the 50th Annual IEEE/ACM International Symposium on Microarchitecture},\n  pages={587--599},\n  year={2017},\n  publisher={ACM},\n  doi={10.1145/3123939.3123978}\n}"
+  },
+  {
+   "year": 2016,
+   "title": "CPU-GPU² Trigeneous Computing for Iterative Reconstruction in Computed Tomography",
+   "authors": "Chanyoung Oh, Youngmin Yi*",
+   "venue": "IEIE SPC",
+   "type": "article",
+   "venueFull": "IEIE SPC",
+   "bibtex": "@article{oh2016cpu,\n  title={CPU-GPU$^2$ Trigeneous Computing for Iterative Reconstruction in Computed Tomography},\n  author={Oh, Chanyoung and Yi, Youngmin},\n  journal={IEIE Transactions on Smart Processing and Computing},\n  volume={5},\n  number={4},\n  pages={294--301},\n  year={2016},\n  publisher={The Institute of Electronics Engineers of Korea},\n  doi={10.5573/ieiespc.2016.5.4.294}\n}"
+  },
+  {
+   "year": 2015,
+   "title": "Real-time Face Detection in Full HD Images Exploiting both Embedded CPU and GPU",
+   "authors": "Chanyoung Oh, Saehanseul Yi, Youngmin Yi*",
+   "venue": "ICME 2015",
+   "type": "inproceedings",
+   "venueFull": "ICME 2015",
+   "bibtex": "@inproceedings{oh2015real,\n  title={Real-time face detection in Full HD images exploiting both embedded CPU and GPU},\n  author={Oh, Chanyoung and Yi, Saehanseul and Yi, Youngmin},\n  booktitle={2015 IEEE International Conference on Multimedia and Expo (ICME)},\n  pages={1--6},\n  year={2015},\n  organization={IEEE},\n  doi={10.1109/icme.2015.7177522}\n}"
+  },
+  {
+   "year": 2014,
+   "title": "Real-time Integrated Face Detection and Recognition on Embedded GPGPUs",
+   "authors": "Saehanseul Yi, Illo Yoon, Chanyoung Oh, Youngmin Yi*",
+   "venue": "ESTIMedia 2014",
+   "type": "inproceedings",
+   "venueFull": "ESTIMedia 2014",
+   "bibtex": "@inproceedings{yi2014real,\n  title={Real-time integrated face detection and recognition on embedded GPGPUs},\n  author={Yi, Saehanseul and Yoon, Illo and Oh, Chanyoung and Yi, Youngmin},\n  booktitle={2014 IEEE 12th Symposium on Embedded Systems for Real-time Multimedia (ESTIMedia)},\n  pages={98--107},\n  year={2014},\n  organization={IEEE},\n  doi={10.1109/estimedia.2014.6962350}\n}"
+  }
+ ],
+ "domestic": [
+  {
+   "year": 2026,
+   "title": "산불 연기 탐지 DETR 모델의 DCP 채널과 합성 데이터 증강 적용 및 분석",
+   "authors": "Nah-kyung Lee, Chan-young Oh",
+   "venue": "JCCI 2026",
+   "type": "domestic",
+   "venueFull": "통신정보 합동학술대회 (JCCI)",
+   "authorsKo": "이나경, 오찬영",
+   "month": "Apr"
+  },
+  {
+   "year": 2026,
+   "title": "비행체 분류 모델의 이미지 입력 크기 변화에 따른 Black-Box XAI 설명 충실도 비교",
+   "authors": "Se-jin Choi, Chan-young Oh",
+   "venue": "JCCI 2026",
+   "type": "domestic",
+   "venueFull": "통신정보 합동학술대회 (JCCI)",
+   "authorsKo": "최세진, 오찬영",
+   "month": "Apr"
+  },
+  {
+   "year": 2026,
+   "title": "다중 소리 감지 및 모션 인식 기반의 청각 장애인을 위한 반려로봇: 히어베어v2",
+   "authors": "Hyun-ji Hong, Hyun-seo Lee, Min-jung Kwak, Yu-jin Kim, Chan-young Oh",
+   "venue": "2026 한국통신학회 동계",
+   "type": "domestic",
+   "venueFull": "한국통신학회 동계종합학술발표회",
+   "authorsKo": "홍현지, 이현서, 곽민정, 김유진, 오찬영",
+   "month": "Feb"
+  },
+  {
+   "year": 2026,
+   "title": "매복치 필터링을 활용한 치주염 진단 AI 시스템에 관한 연구",
+   "authors": "Seung-min Yoo, Nah-kyung Lee, Chan-young Oh",
+   "venue": "2026 한국통신학회 동계",
+   "type": "domestic",
+   "venueFull": "한국통신학회 동계종합학술발표회",
+   "authorsKo": "유승민, 이나경, 오찬영",
+   "month": "Feb"
+  },
+  {
+   "year": 2026,
+   "title": "AI MACROFY: 클라우드 및 온디바이스 멀티모달 LLM을 활용한 안드로이드 UI 에이전트 설계",
+   "authors": "Se-jin Choi, Chan-young Oh",
+   "venue": "2026 한국통신학회 동계",
+   "type": "domestic",
+   "venueFull": "한국통신학회 동계종합학술발표회",
+   "authorsKo": "최세진, 오찬영",
+   "month": "Feb"
+  },
+  {
+   "year": 2025,
+   "title": "청각 장애인을 위한 반려로봇: 히어베어",
+   "authors": "Hyun-ji Hong, Hyun-seo Lee, Min-jung Kwak, Yu-jin Kim, Chan-young Oh",
+   "venue": "2025 대한임베디드공학회 추계",
+   "type": "domestic",
+   "venueFull": "대한임베디드공학회 추계학술대회",
+   "authorsKo": "홍현지, 이현서, 곽민정, 김유진, 오찬영",
+   "month": "Nov"
+  },
+  {
+   "year": 2025,
+   "title": "임베디드 환경에서 제조 공정의 병목 예측을 위한 압축 트리 모델",
+   "authors": "Seung-min Yoo, Chan-young Oh",
+   "venue": "ISET 2025",
+   "type": "domestic",
+   "venueFull": "ISET2025",
+   "authorsKo": "유승민, 오찬영",
+   "month": "May"
+  },
+  {
+   "year": 2024,
+   "title": "온-드론 보행자 검출을 위한 배경 제거 방법",
+   "authors": "Hyun-ji Hong, Hong-rim Noh, Chan-young Oh",
+   "venue": "2024 대한임베디드공학회 추계",
+   "type": "domestic",
+   "venueFull": "대한임베디드공학회 추계학술대회",
+   "authorsKo": "홍현지, 노홍림, 오찬영",
+   "month": "Nov"
+  },
+  {
+   "year": 2024,
+   "title": "하이퍼 캐주얼 게임을 통해 본 게임 트렌드 분석 및 개선 전략",
+   "authors": "Dong-yeon Lee, Byung-ha Jeon, Kyung-jin Min, Jung-hoon Kim, Chan-young Oh",
+   "venue": "2024 한국통신학회 동계",
+   "type": "domestic",
+   "venueFull": "한국통신학회 동계종합학술발표회",
+   "authorsKo": "이동연, 전병하, 민경진, 김정훈, 오찬영",
+   "month": "Feb"
+  }
+ ]
+}

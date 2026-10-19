@@ -1,0 +1,4 @@
+preview.html
+*.tmp
+__pycache__/
+.DS_Store
