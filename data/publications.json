@@ -34,7 +34,7 @@
    "type": "article",
    "venueFull": "Scientific Reports",
    "tags": [
-    "SCI · IF 4.9 · Q1"
+    "SCI, IF 4.9, Q1"
    ],
    "pdf": "papers/2605_hasheye.pdf",
    "bibtex": "@article{hong2026hasheye,\n  title={HashEye: a real-time on-drone high-resolution tiny object detection via spatial pruning},\n  author={Hong, Hyeonji and Lee, Nakyeong and Jang, Kwangwoo and Kim, Gague and Jeong, Yangjae and Oh, Chanyoung},\n  journal={Scientific Reports},\n  volume={16},\n  number={1},\n  pages={20918},\n  year={2026},\n  publisher={Springer Science and Business Media LLC},\n  doi={10.1038/s41598-026-51941-w}\n}",
@@ -57,7 +57,7 @@
    "type": "article",
    "venueFull": "Applied Sciences",
    "tags": [
-    "SCI · IF 2.9"
+    "SCI, IF 2.9"
    ],
    "bibtex": "@article{yoo2025microforest,\n  title={MicroForest: Lightweight Bottleneck Prediction for Manufacturing Processes on Edge Devices},\n  author={Yoo, Seungmin and Oh, Chanyoung},\n  journal={Applied Sciences},\n  volume={15},\n  number={14},\n  pages={7798},\n  year={2025},\n  publisher={MDPI AG},\n  doi={10.3390/app15147798}\n}"
   },
@@ -69,7 +69,7 @@
    "type": "article",
    "venueFull": "Cluster Computing",
    "tags": [
-    "SCI · IF 5.5 · Q1"
+    "SCI, IF 5.5, Q1"
    ],
    "bibtex": "@article{oh2024hybridhadoop,\n  title={Hybridhadoop: CPU-GPU hybrid scheduling in hadoop},\n  author={Oh, Chanyoung and Yi, Saehanseul and Seok, Jongkyu and Jung, Hyeonjin and Yoon, Illo and Yi, Youngmin},\n  journal={Cluster Computing},\n  volume={27},\n  number={3},\n  pages={3875--3892},\n  year={2024},\n  publisher={Springer Science and Business Media LLC},\n  doi={10.1007/s10586-023-04178-5}\n}",
    "selective": true
@@ -82,7 +82,7 @@
    "type": "article",
    "venueFull": "Drones",
    "tags": [
-    "SCI · IF 5.2"
+    "SCI, IF 5.2"
    ],
    "bibtex": "@article{oh2023towards,\n  title={Towards Real-Time On-Drone Pedestrian Tracking in 4K Inputs},\n  author={Oh, Chanyoung and Lee, Moonsoo and Lim, Chaedeok},\n  journal={Drones},\n  volume={7},\n  number={10},\n  pages={623},\n  year={2023},\n  publisher={MDPI AG},\n  doi={10.3390/drones7100623}\n}"
   },
@@ -94,7 +94,7 @@
    "type": "inproceedings",
    "venueFull": "CODES+ISSS 2021",
    "tags": [
-    "CS BK21+ · IF 2"
+    "CS BK21+, IF 2"
    ],
    "bibtex": "@article{oh2021exploiting,\n  title={Exploiting Activation Sparsity for Fast CNN Inference on Mobile GPUs},\n  author={Oh, Chanyoung and So, Junhyuk and Kim, Sumin and Yi, Youngmin},\n  journal={ACM Transactions on Embedded Computing Systems},\n  volume={20},\n  number={5s},\n  pages={1--25},\n  year={2021},\n  publisher={Association for Computing Machinery (ACM)},\n  doi={10.1145/3477008}\n}",
    "selective": true
@@ -107,7 +107,7 @@
    "type": "inproceedings",
    "venueFull": "PACT 2020",
    "tags": [
-    "CS BK21+ · IF 3"
+    "CS BK21+, IF 3"
    ],
 
    "bibtex": "@inproceedings{oh2020gopipe,\n  title={GOPipe: A Granularity-Oblivious Programming Framework for Pipelined Stencil Executions on GPU},\n  author={Oh, Chanyoung and Zheng, Zhen and Shen, Xipeng and Zhai, Jidong and Yi, Youngmin},\n  booktitle={Proceedings of the ACM International Conference on Parallel Architectures and Compilation Techniques},\n  pages={43--54},\n  year={2020},\n  publisher={ACM},\n  doi={10.1145/3410463.3414656}\n}"
@@ -120,7 +120,7 @@
    "type": "inproceedings",
    "venueFull": "DAC 2020",
    "tags": [
-    "CS BK21+ · IF 3"
+    "CS BK21+, IF 3"
    ],
 
    "bibtex": "@inproceedings{park2020bpnet,\n  title={BPNet: Branch-pruned Conditional Neural Network for Systematic Time-accuracy Tradeoff},\n  author={Park, Kyungchul and Oh, Chanyoung and Yi, Youngmin},\n  booktitle={2020 57th ACM/IEEE Design Automation Conference (DAC)},\n  pages={1--6},\n  year={2020},\n  organization={IEEE},\n  doi={10.1109/dac18072.2020.9218545}\n}"
@@ -133,7 +133,7 @@
    "type": "inproceedings",
    "venueFull": "LCTES 2020",
    "tags": [
-    "CS BK21+ · IF 1"
+    "CS BK21+, IF 1"
    ],
 
    "bibtex": "@inproceedings{oh2020towards,\n  title={Towards Real-time CNN Inference from a Video Stream on a Mobile GPU (WiP Paper)},\n  author={Oh, Chanyoung and Park, Gunju and Kim, Sumin and Kim, Dohee and Yi, Youngmin},\n  booktitle={The 21st ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems},\n  pages={136--140},\n  year={2020},\n  publisher={ACM},\n  doi={10.1145/3372799.3394366}\n}"
@@ -146,7 +146,7 @@
    "type": "inproceedings",
    "venueFull": "ASPLOS 2019",
    "tags": [
-    "CS BK21+ · IF 4"
+    "CS BK21+, IF 4"
    ],
 
    "bibtex": "@inproceedings{zheng2019hiwaylib,\n  title={HiWayLib: A Software Framework for Enabling High Performance Communications for Heterogeneous Pipeline Computations},\n  author={Zheng, Zhen and Oh, Chanyoung and Zhai, Jidong and Shen, Xipeng and Yi, Youngmin and Chen, Wenguang},\n  booktitle={Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems},\n  pages={153--166},\n  year={2019},\n  publisher={ACM},\n  doi={10.1145/3297858.3304032}\n}"
@@ -195,7 +195,7 @@
    "type": "inproceedings",
    "venueFull": "MICRO 2017",
    "tags": [
-    "CS BK21+ · IF 4"
+    "CS BK21+, IF 4"
    ],
 
    "bibtex": "@inproceedings{zheng2017versapipe,\n  title={Versapipe: a versatile programming framework for pipelined computing on GPU},\n  author={Zheng, Zhen and Oh, Chanyoung and Zhai, Jidong and Shen, Xipeng and Yi, Youngmin and Chen, Wenguang},\n  booktitle={Proceedings of the 50th Annual IEEE/ACM International Symposium on Microarchitecture},\n  pages={587--599},\n  year={2017},\n  publisher={ACM},\n  doi={10.1145/3123939.3123978}\n}"

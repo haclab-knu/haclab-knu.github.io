@@ -67,7 +67,7 @@ Open-access papers (e.g. Scientific Reports, MDPI) may be posted as published. F
 Repository Settings → Pages → Custom domain → enter the domain (e.g. `haclab.kongju.ac.kr`), and ask IT for a DNS `CNAME` record pointing that name to `haclab-knu.github.io`. GitHub issues the HTTPS certificate automatically; then tick "Enforce HTTPS".
 
 ## Publications: tags, PDF, BibTeX
-- `"tags"`: each item becomes its own pill. `"SCI · IF 4.9 · Q1"` or `["SCI", "IF 4.9", "Q1"]` both work. SCI, IF and Q1–Q4 get their own colors.
+- `"tags"`: each item becomes its own pill. `"SCI, IF 4.9, Q1"` or `["SCI", "IF 4.9", "Q1"]` both work. SCI, IF, Q1–Q4 and CS BK21+ get their own colors.
 - `"pdf"`: a bare file name (`2026_hasheye.pdf`) is looked up in `pdfBase` from `site.json`; a path with a slash (`papers/x.pdf`) or a full URL is used as written. Leave `""` to hide the link.
 - `"bibtex"`: the exact BibTeX shown when visitors click BibTeX (paste Google Scholar's version here). Without it, a minimal entry is generated from title/authors/venue/year.
 

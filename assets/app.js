@@ -347,9 +347,9 @@ function authorsHtml(p, pi) {
   if (p.authorsKo) return p.authorsKo.split(', ').map(n => pi.includes(n) ? `<u>${esc(n)}</u>` : esc(n)).join(', ');
   return p.authors.split(', ').map(n => pi.includes(clean(n).trim()) ? `<u>${esc(short(n))}</u>` : esc(short(n))).join(', ');
 }
-// "SCI · IF 4.9 · Q1" becomes three pills; each kind gets its own color
-const splitTags = tags => (tags || []).flatMap(t => String(t).split(/\s*[·|]\s*/)).filter(Boolean);
-const tagKind = t => /^SCIE?$/i.test(t) ? 't-sci' : /^IF\b/i.test(t) ? 't-if' : /^Q[1-4]$/i.test(t) ? 't-q' : /review/i.test(t) ? 't-rev' : '';
+// "SCI, IF 4.9, Q1" becomes three pills (the older "·" separator still works)
+const splitTags = tags => (tags || []).flatMap(t => String(t).split(/\s*[,·|]\s*/)).filter(Boolean);
+const tagKind = t => /^SCIE?$/i.test(t) ? 't-sci' : /^IF\b/i.test(t) ? 't-if' : /^Q[1-4]$/i.test(t) ? 't-q' : /BK21/i.test(t) ? 't-bk' : /review/i.test(t) ? 't-rev' : '';
 // a bare file name is looked up in pdfBase; anything with a slash (or a full URL) is used as written
 const pdfHref = (f, base) => /\//.test(f) ? f : (base || '') + f;
 let uid = 0;
