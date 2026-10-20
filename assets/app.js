@@ -56,6 +56,15 @@ async function copyText(text, btn, label) {
       vx: (rnd() - .5) * .03, vy: (rnd() - .5) * .02, conf: .78 + rnd() * .2,
     }));
   }
+  // The pipeline processes one captured frame per cycle; the world moves on between cycles.
+  function advance(steps) {
+    const sw = cols * S, sh = rows * S, x0 = (wide ? .5 : .08) * sw;
+    for (const o of objs) {
+      o.x += o.vx * steps; o.y += o.vy * steps;
+      if (o.x < x0 || o.x > .95 * sw) { o.vx *= -1; o.x = Math.min(.95 * sw, Math.max(x0, o.x)); }
+      if (o.y < .12 * sh || o.y > .94 * sh) { o.vy *= -1; o.y = Math.min(.94 * sh, Math.max(.12 * sh, o.y)); }
+    }
+  }
   function drawSea(t) {
     const g = sx, sw = sea.width, sh = sea.height;
     const bg = g.createLinearGradient(0, 0, sw, sh); bg.addColorStop(0, '#0d2c3d'); bg.addColorStop(1, '#14445a');
@@ -70,7 +79,6 @@ async function copyText(text, btn, label) {
       g.fillStyle = `rgba(238,242,230,${a})`; g.fillRect(s.x, s.y, 2, 2);
     }
     for (const o of objs) {
-      if (!reduced) { o.x += o.vx; o.y += o.vy; }
       if (o.boat) {
         g.fillStyle = 'rgba(190,215,225,.28)'; g.fillRect(o.x - 5, o.y + .5, 5, 1);          // wake
         g.fillStyle = '#e6e9ea'; g.fillRect(o.x, o.y, 4, 2); g.fillStyle = '#2a2f36'; g.fillRect(o.x + 3, o.y, 1, 2);
@@ -154,18 +162,26 @@ async function copyText(text, btn, label) {
 
   function frame(now) {
     const el = reduced ? CYCLE - 1 : (now - t0) % CYCLE;
-    if (!reduced && now - t0 >= CYCLE) { t0 = now - el; snapshot(); }
+    if (!reduced && now - t0 >= CYCLE) { t0 = now - el; advance(480); drawSea(now); snapshot(); }
     let ph = 'scan', pt = 0, acc = 0;
     for (const [n, d] of PHASES) { if (el < acc + d) { ph = n; pt = (el - acc) / d; break; } acc += d; }
     if (reduced) { ph = 'detect'; pt = 1; }
     if (!wide && ph === 'pack') { ph = 'detect'; pt = 0; }
     if (ph !== lastPhase && steps) { lastPhase = ph; [...steps.children].forEach(li => li.classList.toggle('on', li.dataset.s === ph)); }
 
-    drawSea(now);
     x.imageSmoothingEnabled = true; x.drawImage(sea, 0, 0, cols * PS, rows * PS);
     x.drawImage(grid, 0, 0, W, H);
     const sn = snap; if (!sn) return;
     const salSet = new Set(sn.sal);
+    const cr = c.getBoundingClientRect(), hr = hud ? hud.getBoundingClientRect() : null;
+    const keepOut = rects => {   // clip everything drawn next so it never covers the HUD card (or the mosaic)
+      x.save(); x.beginPath(); x.rect(0, 0, W, H);
+      for (const r of rects) if (r && r.w > 0) x.rect(r.x, r.y, r.w, r.h);
+      x.clip('evenodd');
+    };
+    const hudR = hr && hr.width ? { x: hr.left - cr.left - 6, y: hr.top - cr.top - 6, w: hr.width + 12, h: hr.height + 12 } : null;
+    if (ph !== 'scan') { const f = ph === 'prune' ? ease(pt) : 1; x.fillStyle = `rgba(4,9,18,${.5 * f})`; x.fillRect(0, 0, W, H); }
+    keepOut([hudR]);
 
     if (ph === 'scan') {
       const sweep = ease(pt) * (W + PS);
@@ -177,7 +193,6 @@ async function copyText(text, btn, label) {
       x.fillStyle = 'rgba(70,214,207,.12)'; x.fillRect(sweep - 40, 0, 40, H);
     } else {
       const fade = ph === 'prune' ? ease(pt) : 1;
-      x.fillStyle = `rgba(4,9,18,${.5 * fade})`; x.fillRect(0, 0, W, H);
       for (const i of sn.sal) {
         const [X, Y] = pxy(i);
         x.drawImage(sea, (i % cols) * S, Math.floor(i / cols) * S, S, S, X, Y, PS, PS);
@@ -188,6 +203,7 @@ async function copyText(text, btn, label) {
         for (let i = 0; i < cols * rows; i++) if (!salSet.has(i)) { const [X, Y] = pxy(i); x.fillStyle = `hsla(${hue(sn.buckets[i])},70%,55%,${.16 * (1 - fade)})`; x.fillRect(X, Y, PS, PS); }
       }
     }
+    x.restore();
 
     const box = wide ? mosaicBox() : null;
     if (box && (ph === 'pack' || ph === 'detect') && sn.cells.length) {
@@ -219,6 +235,8 @@ async function copyText(text, btn, label) {
     }
 
     if (ph === 'detect') {
+      const avoid = [hudR, box && { x: box.x - 10, y: box.y - 28, w: box.w + 20, h: box.w + 38 }].filter(Boolean);
+      const hits = (l, t, w, h) => avoid.some(r => l < r.x + r.w && l + w > r.x && t < r.y + r.h && t + h > r.y);
       const a = wide ? Math.max(0, Math.min(1, (pt - .3) * 3)) : Math.min(1, pt * 3);
       const fused = new Map(); // WBF: several mosaic boxes of one object become one box on the frame
       for (const cl of sn.cells.length ? sn.cells : sn.sal.map(i => ({ i, hit: [...sn.objAt].find(([j]) => j === i)?.[1] ?? -1 })))
@@ -227,6 +245,7 @@ async function copyText(text, btn, label) {
       for (const k of fused.keys()) {
         const o = sn.objs[k], X = o.x / S * PS, Y = o.y / S * PS, s = o.boat ? 13 : 10;
         if (wide && X < W * .45) continue;
+        if (hits(X - s / 2 - 2, Y - s / 2 - (wide ? 17 : 2), (wide ? 110 : s + 8), s + (wide ? 19 : 4))) continue;
         x.strokeStyle = `rgba(242,180,65,${a})`; x.lineWidth = 1.5; x.strokeRect(X - s / 2, Y - s / 2, s + 4, s); x.lineWidth = 1;
         if (wide && a > .5) {
           const label = (o.boat ? 'boat ' : 'person ') + o.conf.toFixed(2), lw = x.measureText(label).width + 8;
