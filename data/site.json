@@ -3,7 +3,7 @@
   "fullName": "High-Performance AI Computing Lab",
   "affiliation": "Dept. of Software, Kongju National University",
   "tagline": "On-device AI for physical agents that act in real-time, safely.",
-  "intro": "We study On-device Physical AI: edge agents that perceive, decide, and act on their own onboard computers. Our goal is on-device AI that lets physical agents carry out real tasks in real time and safely, without relying on the cloud.",
+  "intro": "We study On-device Physical AI: edge agents that perceive, decide, and act on their own onboard computers. Physical agents can carry out their tasks in real-time and safely, without relying on the cloud.",
   "email": "cyoh@kongju.ac.kr",
   "address": [
     "Rm.916, 8th Engineering Hall, 1223-24 Cheonan-daero,",
