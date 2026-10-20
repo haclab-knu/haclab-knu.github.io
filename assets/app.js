@@ -35,6 +35,10 @@ async function copyText(text, btn, label) {
 (function scene() {
   const c = $('scene'), x = c.getContext('2d');
   const hud = $('hud'), steps = $('steps');
+  // With "reduce motion" on (OS setting) the demo does not auto-play; a button lets the visitor start it.
+  const mq = matchMedia('(prefers-reduced-motion: reduce)');
+  let still = mq.matches;
+  const playBtn = $('demoPlay');
   if (!c) return;
   const S = 4;                         // samples per patch side in the offscreen frame (vector = S*S*3 values)
   const L = 5;                         // hash length -> 2^L buckets
@@ -161,11 +165,11 @@ async function copyText(text, btn, label) {
   const pxy = i => [(i % cols) * PS, Math.floor(i / cols) * PS];
 
   function frame(now) {
-    const el = reduced ? CYCLE - 1 : (now - t0) % CYCLE;
-    if (!reduced && now - t0 >= CYCLE) { t0 = now - el; advance(480); drawSea(now); snapshot(); }
+    const el = still ? CYCLE - 1 : (now - t0) % CYCLE;
+    if (!still && now - t0 >= CYCLE) { t0 = now - el; advance(480); drawSea(now); snapshot(); }
     let ph = 'scan', pt = 0, acc = 0;
     for (const [n, d] of PHASES) { if (el < acc + d) { ph = n; pt = (el - acc) / d; break; } acc += d; }
-    if (reduced) { ph = 'detect'; pt = 1; }
+    if (still) { ph = 'detect'; pt = 1; }
     if (!wide && ph === 'pack') { ph = 'detect'; pt = 0; }
     if (ph !== lastPhase && steps) { lastPhase = ph; [...steps.children].forEach(li => li.classList.toggle('on', li.dataset.s === ph)); }
 
@@ -235,7 +239,12 @@ async function copyText(text, btn, label) {
     }
 
     if (ph === 'detect') {
-      const avoid = [hudR, box && { x: box.x - 10, y: box.y - 28, w: box.w + 20, h: box.w + 38 }].filter(Boolean);
+      // also stay off the headline and intro text (their real text extents, which change with screen width)
+      const textR = el => { if (!el) return null; const rg = document.createRange(); rg.selectNodeContents(el); const r = rg.getBoundingClientRect();
+        return r.width ? { x: r.left - cr.left - 8, y: r.top - cr.top - 8, w: r.width + 16, h: r.height + 16 } : null; };
+      const copy = document.querySelector('.hero-copy');
+      const avoid = [hudR, box && { x: box.x - 10, y: box.y - 28, w: box.w + 20, h: box.w + 38 },
+        ...(copy ? [...copy.children].map(textR) : [])].filter(Boolean);
       const hits = (l, t, w, h) => avoid.some(r => l < r.x + r.w && l + w > r.x && t < r.y + r.h && t + h > r.y);
       const a = wide ? Math.max(0, Math.min(1, (pt - .3) * 3)) : Math.min(1, pt * 3);
       const fused = new Map(); // WBF: several mosaic boxes of one object become one box on the frame
@@ -244,7 +253,6 @@ async function copyText(text, btn, label) {
       x.font = '500 10px "JetBrains Mono", monospace';
       for (const k of fused.keys()) {
         const o = sn.objs[k], X = o.x / S * PS, Y = o.y / S * PS, s = o.boat ? 13 : 10;
-        if (wide && X < W * .45) continue;
         if (hits(X - s / 2 - 2, Y - s / 2 - (wide ? 17 : 2), (wide ? 110 : s + 8), s + (wide ? 19 : 4))) continue;
         x.strokeStyle = `rgba(242,180,65,${a})`; x.lineWidth = 1.5; x.strokeRect(X - s / 2, Y - s / 2, s + 4, s); x.lineWidth = 1;
         if (wide && a > .5) {
@@ -254,11 +262,14 @@ async function copyText(text, btn, label) {
         }
       }
     }
-    if (running && !reduced) raf = requestAnimationFrame(frame);
+    if (running && !still) raf = requestAnimationFrame(frame);
   }
-  const start = () => { if (running || reduced) return; running = true; raf = requestAnimationFrame(frame); };
+  const start = () => { if (running || still) return; running = true; raf = requestAnimationFrame(frame); };
   const stop = () => { running = false; cancelAnimationFrame(raf); };
   size(); frame(performance.now());
+  const setStill = v => { still = v; if (playBtn) playBtn.hidden = !v; if (v) { stop(); frame(performance.now()); } else { t0 = performance.now(); start(); } };
+  if (playBtn) { playBtn.hidden = !still; playBtn.onclick = () => setStill(false); }
+  mq.addEventListener?.('change', e => setStill(e.matches));
   let rt; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => { size(); frame(performance.now()); }, 120); }).observe(c);
   new IntersectionObserver(([e]) => e.isIntersecting && !document.hidden ? start() : stop()).observe(c);
   document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
@@ -365,14 +376,17 @@ function renderPubs(d, site) {
   const sets = { selective: d.international.filter(p => p.selective), international: d.international, domestic: d.domestic };
   if (!sets.selective.length) delete sets.selective;
   const els = Object.fromEntries(Object.entries(sets).map(([k, list]) => [k, list.map(p => [p, pubEntry(p, site)])]));
-  const recent = Math.max(...d.international.map(p => p.year)) - 3;
-  let tab = Object.keys(sets)[0], expanded = false, q = '';
+  // Years shown before "Show earlier papers": International 3 (e.g. 2024–2026), Domestic 2 (2025–2026). Selective shows all.
+  const FOLD = { international: 3, domestic: 2 };
+  const cutoff = Object.fromEntries(Object.entries(sets).map(([k, list]) => [k, Math.max(...list.map(p => p.year)) - ((FOLD[k] || 1) - 1)]));
+  let tab = Object.keys(sets)[0], q = '';
+  const expanded = {};
   $('pubTabs').innerHTML = Object.keys(sets).map(k => `<button role="tab" data-k="${k}" aria-selected="${k === tab}">${k[0].toUpperCase() + k.slice(1)}<span>${sets[k].length}</span></button>`).join('');
   const render = () => {
     const list = $('pubList'); list.textContent = '';
     let rows = els[tab].filter(([, el]) => !q || el.dataset.q.includes(q));
-    const hidden = (!q && !expanded && tab === 'international') ? rows.filter(([p]) => p.year < recent).length : 0;
-    if (hidden) rows = rows.filter(([p]) => p.year >= recent);
+    const hidden = (!q && !expanded[tab] && FOLD[tab]) ? rows.filter(([p]) => p.year < cutoff[tab]).length : 0;
+    if (hidden) rows = rows.filter(([p]) => p.year >= cutoff[tab]);
     const years = [...new Set(rows.map(([p]) => p.year))];
     for (const y of years) {
       const g = document.createElement('div'); g.className = 'yg';
@@ -388,7 +402,7 @@ function renderPubs(d, site) {
     [...$('pubTabs').children].forEach(x => x.setAttribute('aria-selected', x === b)); render();
   });
   $('pubSearch').addEventListener('input', e => { q = e.target.value.trim().toLowerCase(); render(); });
-  $('pubMore').onclick = () => { expanded = true; render(); };
+  $('pubMore').onclick = () => { expanded[tab] = true; render(); };
   render();
 }
 

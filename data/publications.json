@@ -232,7 +232,7 @@
   {
    "year": 2026,
    "title": "산불 연기 탐지 DETR 모델의 DCP 채널과 합성 데이터 증강 적용 및 분석",
-   "authors": "Nah-kyung Lee, Chan-young Oh",
+   "authors": "Nakyeong Lee, Chanyoung Oh",
    "venue": "JCCI 2026",
    "type": "domestic",
    "venueFull": "통신정보 합동학술대회 (JCCI)",
@@ -242,7 +242,7 @@
   {
    "year": 2026,
    "title": "비행체 분류 모델의 이미지 입력 크기 변화에 따른 Black-Box XAI 설명 충실도 비교",
-   "authors": "Se-jin Choi, Chan-young Oh",
+   "authors": "Sejin Choi, Chanyoung Oh",
    "venue": "JCCI 2026",
    "type": "domestic",
    "venueFull": "통신정보 합동학술대회 (JCCI)",
@@ -252,7 +252,7 @@
   {
    "year": 2026,
    "title": "다중 소리 감지 및 모션 인식 기반의 청각 장애인을 위한 반려로봇: 히어베어v2",
-   "authors": "Hyun-ji Hong, Hyun-seo Lee, Min-jung Kwak, Yu-jin Kim, Chan-young Oh",
+   "authors": "Hyeonji Hong, Hyunseo Lee, Minjung Kwak, Yujin Kim, Chanyoung Oh",
    "venue": "2026 한국통신학회 동계",
    "type": "domestic",
    "venueFull": "한국통신학회 동계종합학술발표회",
@@ -262,7 +262,7 @@
   {
    "year": 2026,
    "title": "매복치 필터링을 활용한 치주염 진단 AI 시스템에 관한 연구",
-   "authors": "Seung-min Yoo, Nah-kyung Lee, Chan-young Oh",
+   "authors": "Seungmin Yoo, Nakyeong Lee, Chanyoung Oh",
    "venue": "2026 한국통신학회 동계",
    "type": "domestic",
    "venueFull": "한국통신학회 동계종합학술발표회",
@@ -272,7 +272,7 @@
   {
    "year": 2026,
    "title": "AI MACROFY: 클라우드 및 온디바이스 멀티모달 LLM을 활용한 안드로이드 UI 에이전트 설계",
-   "authors": "Se-jin Choi, Chan-young Oh",
+   "authors": "Sejin Choi, Chanyoung Oh",
    "venue": "2026 한국통신학회 동계",
    "type": "domestic",
    "venueFull": "한국통신학회 동계종합학술발표회",
@@ -282,7 +282,7 @@
   {
    "year": 2025,
    "title": "청각 장애인을 위한 반려로봇: 히어베어",
-   "authors": "Hyun-ji Hong, Hyun-seo Lee, Min-jung Kwak, Yu-jin Kim, Chan-young Oh",
+   "authors": "Hyeonji Hong, Hyunseo Lee, Minjung Kwak, Yujin Kim, Chanyoung Oh",
    "venue": "2025 대한임베디드공학회 추계",
    "type": "domestic",
    "venueFull": "대한임베디드공학회 추계학술대회",
@@ -292,7 +292,7 @@
   {
    "year": 2025,
    "title": "임베디드 환경에서 제조 공정의 병목 예측을 위한 압축 트리 모델",
-   "authors": "Seung-min Yoo, Chan-young Oh",
+   "authors": "Seungmin Yoo, Chanyoung Oh",
    "venue": "ISET 2025",
    "type": "domestic",
    "venueFull": "ISET2025",
@@ -302,7 +302,7 @@
   {
    "year": 2024,
    "title": "온-드론 보행자 검출을 위한 배경 제거 방법",
-   "authors": "Hyun-ji Hong, Hong-rim Noh, Chan-young Oh",
+   "authors": "Hyeonji Hong, Hongrim Noh, Chanyoung Oh",
    "venue": "2024 대한임베디드공학회 추계",
    "type": "domestic",
    "venueFull": "대한임베디드공학회 추계학술대회",
@@ -312,7 +312,7 @@
   {
    "year": 2024,
    "title": "하이퍼 캐주얼 게임을 통해 본 게임 트렌드 분석 및 개선 전략",
-   "authors": "Dong-yeon Lee, Byung-ha Jeon, Kyung-jin Min, Jung-hoon Kim, Chan-young Oh",
+   "authors": "Dongyeon Lee, Byungha Jeon, Kyungjin Min, Junghoon Kim, Chanyoung Oh",
    "venue": "2024 한국통신학회 동계",
    "type": "domestic",
    "venueFull": "한국통신학회 동계종합학술발표회",

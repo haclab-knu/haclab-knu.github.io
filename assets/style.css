@@ -323,3 +323,7 @@ em{font-style:italic}
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
 }
+
+/* shown only when the OS asks for reduced motion: the demo waits for a click instead of auto-playing */
+.demo-play{justify-self:start;margin:2px 0 4px;font:500 11px var(--f-mono);letter-spacing:.06em;color:#04121a;background:var(--hi);border:0;border-radius:999px;padding:7px 14px;cursor:pointer}
+.demo-play:hover{filter:brightness(1.1)}
