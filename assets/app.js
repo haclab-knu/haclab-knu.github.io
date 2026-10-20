@@ -361,10 +361,12 @@ function pubEntry(p, site) {
   return el;
 }
 function renderPubs(d, site) {
-  const sets = { international: d.international, domestic: d.domestic };
-  const els = { international: d.international.map(p => [p, pubEntry(p, site)]), domestic: d.domestic.map(p => [p, pubEntry(p, site)]) };
+  // Selective = papers marked "selective": true; they stay in International as well
+  const sets = { selective: d.international.filter(p => p.selective), international: d.international, domestic: d.domestic };
+  if (!sets.selective.length) delete sets.selective;
+  const els = Object.fromEntries(Object.entries(sets).map(([k, list]) => [k, list.map(p => [p, pubEntry(p, site)])]));
   const recent = Math.max(...d.international.map(p => p.year)) - 3;
-  let tab = 'international', expanded = false, q = '';
+  let tab = Object.keys(sets)[0], expanded = false, q = '';
   $('pubTabs').innerHTML = Object.keys(sets).map(k => `<button role="tab" data-k="${k}" aria-selected="${k === tab}">${k[0].toUpperCase() + k.slice(1)}<span>${sets[k].length}</span></button>`).join('');
   const render = () => {
     const list = $('pubList'); list.textContent = '';

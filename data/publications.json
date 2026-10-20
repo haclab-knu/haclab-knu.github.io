@@ -10,7 +10,8 @@
    "tags": [
     "Under review"
    ],
-   "note": "Under review"
+   "note": "Under review",
+   "selective": true
   },
   {
    "year": 2026,
@@ -22,7 +23,8 @@
    "tags": [
     "Under review"
    ],
-   "note": "Under review"
+   "note": "Under review",
+   "selective": true
   },
   {
    "year": 2026,
@@ -35,7 +37,8 @@
     "SCI · IF 4.9 · Q1"
    ],
    "pdf": "papers/2605_hasheye.pdf",
-   "bibtex": "@article{hong2026hasheye,\n  title={HashEye: a real-time on-drone high-resolution tiny object detection via spatial pruning},\n  author={Hong, Hyeonji and Lee, Nakyeong and Jang, Kwangwoo and Kim, Gague and Jeong, Yangjae and Oh, Chanyoung},\n  journal={Scientific Reports},\n  volume={16},\n  number={1},\n  pages={20918},\n  year={2026},\n  publisher={Springer Science and Business Media LLC},\n  doi={10.1038/s41598-026-51941-w}\n}"
+   "bibtex": "@article{hong2026hasheye,\n  title={HashEye: a real-time on-drone high-resolution tiny object detection via spatial pruning},\n  author={Hong, Hyeonji and Lee, Nakyeong and Jang, Kwangwoo and Kim, Gague and Jeong, Yangjae and Oh, Chanyoung},\n  journal={Scientific Reports},\n  volume={16},\n  number={1},\n  pages={20918},\n  year={2026},\n  publisher={Springer Science and Business Media LLC},\n  doi={10.1038/s41598-026-51941-w}\n}",
+   "selective": true
   },
   {
    "year": 2025,
@@ -68,7 +71,8 @@
    "tags": [
     "SCI · IF 5.5 · Q1"
    ],
-   "bibtex": "@article{oh2024hybridhadoop,\n  title={Hybridhadoop: CPU-GPU hybrid scheduling in hadoop},\n  author={Oh, Chanyoung and Yi, Saehanseul and Seok, Jongkyu and Jung, Hyeonjin and Yoon, Illo and Yi, Youngmin},\n  journal={Cluster Computing},\n  volume={27},\n  number={3},\n  pages={3875--3892},\n  year={2024},\n  publisher={Springer Science and Business Media LLC},\n  doi={10.1007/s10586-023-04178-5}\n}"
+   "bibtex": "@article{oh2024hybridhadoop,\n  title={Hybridhadoop: CPU-GPU hybrid scheduling in hadoop},\n  author={Oh, Chanyoung and Yi, Saehanseul and Seok, Jongkyu and Jung, Hyeonjin and Yoon, Illo and Yi, Youngmin},\n  journal={Cluster Computing},\n  volume={27},\n  number={3},\n  pages={3875--3892},\n  year={2024},\n  publisher={Springer Science and Business Media LLC},\n  doi={10.1007/s10586-023-04178-5}\n}",
+   "selective": true
   },
   {
    "year": 2023,
@@ -92,7 +96,8 @@
    "tags": [
     "ACM TECS"
    ],
-   "bibtex": "@article{oh2021exploiting,\n  title={Exploiting Activation Sparsity for Fast CNN Inference on Mobile GPUs},\n  author={Oh, Chanyoung and So, Junhyuk and Kim, Sumin and Yi, Youngmin},\n  journal={ACM Transactions on Embedded Computing Systems},\n  volume={20},\n  number={5s},\n  pages={1--25},\n  year={2021},\n  publisher={Association for Computing Machinery (ACM)},\n  doi={10.1145/3477008}\n}"
+   "bibtex": "@article{oh2021exploiting,\n  title={Exploiting Activation Sparsity for Fast CNN Inference on Mobile GPUs},\n  author={Oh, Chanyoung and So, Junhyuk and Kim, Sumin and Yi, Youngmin},\n  journal={ACM Transactions on Embedded Computing Systems},\n  volume={20},\n  number={5s},\n  pages={1--25},\n  year={2021},\n  publisher={Association for Computing Machinery (ACM)},\n  doi={10.1145/3477008}\n}",
+   "selective": true
   },
   {
    "year": 2020,
@@ -204,6 +209,26 @@
   }
  ],
  "domestic": [
+  {
+   "year": 2026,
+   "title": "AprilTag 기반 사족보행 로봇의 사람 추종 구현",
+   "authors": "Hosu Lee, Hyeonji Hong, Yuna Oh, Chanyoung Oh",
+   "venue": "2026 대한임베디드공학회 추계",
+   "type": "domestic",
+   "venueFull": "대한임베디드공학회 추계학술대회",
+   "authorsKo": "이호수, 홍현지, 오윤아, 오찬영",
+   "month": "Nov"
+  },
+  {
+   "year": 2026,
+   "title": "MyTooth-v2: 로봇 매니퓰레이터를 활용한 충치 스크리닝 애플리케이션",
+   "authors": "Sejin Choi, Nakyeong Lee, Yuna Oh, Chanyoung Oh",
+   "venue": "2026 대한임베디드공학회 추계",
+   "type": "domestic",
+   "venueFull": "대한임베디드공학회 추계학술대회",
+   "authorsKo": "최세진, 이나경, 오윤아, 오찬영",
+   "month": "Nov"
+  },
   {
    "year": 2026,
    "title": "산불 연기 탐지 DETR 모델의 DCP 채널과 합성 데이터 증강 적용 및 분석",
