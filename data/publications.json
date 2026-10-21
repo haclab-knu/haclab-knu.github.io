@@ -26,6 +26,22 @@
    "note": "Under review",
    "selective": true
   },
+{
+   "year": 2026,
+   "title": "A Lightweight Grad-CAM Implementation for Edge Devices Using TensorFlow Lite",
+   "authors": "Hosu Lee, Hyeonji Hong, Chanyoung Oh*",
+   "venue": "ICMIC 2026 (Poster)",
+   "type": "inproceedings",
+   "venueFull": "ICMIC 2026 (Poster)"
+  },
+{
+   "year": 2026,
+   "title": "MyTooth: A Mobile Dental Screening Application with Guided Intraoral Capture",
+   "authors": "Sejin Choi, Nakyeong Lee, Chanyoung Oh*",
+   "venue": "ICMIC 2026 Workshop (IWITC)",
+   "type": "inproceedings",
+   "venueFull": "ICMIC 2026 Workshop (IWITC)"
+  },
   {
    "year": 2026,
    "title": "HashEye: A Real-Time On-Drone High-Resolution Tiny Object Detection via Spatial Pruning",
