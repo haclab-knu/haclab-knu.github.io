@@ -26,7 +26,7 @@
    "note": "Under review",
    "selective": true
   },
-{
+  {
    "year": 2026,
    "title": "A Lightweight Grad-CAM Implementation for Edge Devices Using TensorFlow Lite",
    "authors": "Hosu Lee, Hyeonji Hong, Chanyoung Oh*",
@@ -34,7 +34,7 @@
    "type": "inproceedings",
    "venueFull": "ICMIC 2026 (Poster)"
   },
-{
+  {
    "year": 2026,
    "title": "MyTooth: A Mobile Dental Screening Application with Guided Intraoral Capture",
    "authors": "Sejin Choi, Nakyeong Lee, Chanyoung Oh*",
@@ -125,7 +125,6 @@
    "tags": [
     "CS BK21+, IF 3"
    ],
-
    "bibtex": "@inproceedings{oh2020gopipe,\n  title={GOPipe: A Granularity-Oblivious Programming Framework for Pipelined Stencil Executions on GPU},\n  author={Oh, Chanyoung and Zheng, Zhen and Shen, Xipeng and Zhai, Jidong and Yi, Youngmin},\n  booktitle={Proceedings of the ACM International Conference on Parallel Architectures and Compilation Techniques},\n  pages={43--54},\n  year={2020},\n  publisher={ACM},\n  doi={10.1145/3410463.3414656}\n}"
   },
   {
@@ -138,7 +137,6 @@
    "tags": [
     "CS BK21+, IF 3"
    ],
-
    "bibtex": "@inproceedings{park2020bpnet,\n  title={BPNet: Branch-pruned Conditional Neural Network for Systematic Time-accuracy Tradeoff},\n  author={Park, Kyungchul and Oh, Chanyoung and Yi, Youngmin},\n  booktitle={2020 57th ACM/IEEE Design Automation Conference (DAC)},\n  pages={1--6},\n  year={2020},\n  organization={IEEE},\n  doi={10.1109/dac18072.2020.9218545}\n}"
   },
   {
@@ -151,7 +149,6 @@
    "tags": [
     "CS BK21+, IF 1"
    ],
-
    "bibtex": "@inproceedings{oh2020towards,\n  title={Towards Real-time CNN Inference from a Video Stream on a Mobile GPU (WiP Paper)},\n  author={Oh, Chanyoung and Park, Gunju and Kim, Sumin and Kim, Dohee and Yi, Youngmin},\n  booktitle={The 21st ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems},\n  pages={136--140},\n  year={2020},\n  publisher={ACM},\n  doi={10.1145/3372799.3394366}\n}"
   },
   {
@@ -164,7 +161,6 @@
    "tags": [
     "CS BK21+, IF 4"
    ],
-
    "bibtex": "@inproceedings{zheng2019hiwaylib,\n  title={HiWayLib: A Software Framework for Enabling High Performance Communications for Heterogeneous Pipeline Computations},\n  author={Zheng, Zhen and Oh, Chanyoung and Zhai, Jidong and Shen, Xipeng and Yi, Youngmin and Chen, Wenguang},\n  booktitle={Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems},\n  pages={153--166},\n  year={2019},\n  publisher={ACM},\n  doi={10.1145/3297858.3304032}\n}"
   },
   {
@@ -175,7 +171,7 @@
    "type": "article",
    "venueFull": "IEICE Transations on Infomations & Systems",
    "tags": [
-    "SCI"
+    "SCI, IF 0.8"
    ],
    "bibtex": "@article{yoon2018distributed,\n  title={Distributed Video Decoding on Hadoop},\n  author={Yoon, Illo and Yi, Saehanseul and Oh, Chanyoung and Jung, Hyeonjin and Yi, Youngmin},\n  journal={IEICE Transactions on Information and Systems},\n  volume={E101.D},\n  number={12},\n  pages={2933--2941},\n  year={2018},\n  publisher={Institute of Electronics, Information and Communications Engineers (IEICE)},\n  doi={10.1587/transinf.2018pap0014}\n}"
   },
@@ -187,7 +183,7 @@
    "type": "article",
    "venueFull": "IEICE Trans. Info. & Sys.",
    "tags": [
-    "SCI"
+    "SCI, IF 0.8"
    ],
    "bibtex": "@article{oh2018real,\n  title={Real-Time and Energy-Efficient Face Detection on CPU-GPU Heterogeneous Embedded Platforms},\n  author={Oh, Chanyoung and Yi, Saehanseul and Yi, Youngmin},\n  journal={IEICE Transactions on Information and Systems},\n  volume={E101.D},\n  number={12},\n  pages={2878--2888},\n  year={2018},\n  publisher={Institute of Electronics, Information and Communications Engineers (IEICE)},\n  doi={10.1587/transinf.2018pap0004}\n}"
   },
@@ -199,7 +195,7 @@
    "type": "article",
    "venueFull": "Journal of Coastal Research",
    "tags": [
-    "SCI"
+    "SCI, IF 1.1"
    ],
    "bibtex": "@article{kim2018gpu,\n  title={GPU-Accelerated Boussinesq Model Using Compute Unified Device Architecture FORTRAN},\n  author={Kim, Boram and Oh, Chanyoung and Yi, Youngmin and Kim, Dae-Hong},\n  journal={Journal of Coastal Research},\n  volume={85},\n  pages={1176--1180},\n  year={2018},\n  publisher={Coastal Education and Research Foundation},\n  doi={10.2112/si85-236.1}\n}"
   },
@@ -213,7 +209,6 @@
    "tags": [
     "CS BK21+, IF 4"
    ],
-
    "bibtex": "@inproceedings{zheng2017versapipe,\n  title={Versapipe: a versatile programming framework for pipelined computing on GPU},\n  author={Zheng, Zhen and Oh, Chanyoung and Zhai, Jidong and Shen, Xipeng and Yi, Youngmin and Chen, Wenguang},\n  booktitle={Proceedings of the 50th Annual IEEE/ACM International Symposium on Microarchitecture},\n  pages={587--599},\n  year={2017},\n  publisher={ACM},\n  doi={10.1145/3123939.3123978}\n}"
   },
   {
@@ -323,7 +318,10 @@
    "type": "domestic",
    "venueFull": "대한임베디드공학회 추계학술대회",
    "authorsKo": "홍현지, 이현서, 곽민정, 김유진, 오찬영",
-   "month": "Nov"
+   "month": "Nov",
+   "tags": [
+    "Best Paper Award"
+   ]
   },
   {
    "year": 2025,

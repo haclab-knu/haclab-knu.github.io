@@ -349,7 +349,7 @@ function authorsHtml(p, pi) {
 }
 // "SCI, IF 4.9, Q1" becomes three pills (the older "·" separator still works)
 const splitTags = tags => (tags || []).flatMap(t => String(t).split(/\s*[,·|]\s*/)).filter(Boolean);
-const tagKind = t => /^SCIE?$/i.test(t) ? 't-sci' : /^IF\b/i.test(t) ? 't-if' : /^Q[1-4]$/i.test(t) ? 't-q' : /BK21/i.test(t) ? 't-bk' : /review/i.test(t) ? 't-rev' : '';
+const tagKind = t => /^SCIE?$/i.test(t) ? 't-sci' : /^IF\b/i.test(t) ? 't-if' : /^Q[1-4]$/i.test(t) ? 't-q' : /BK21/i.test(t) ? 't-bk' : /award/i.test(t) ? 't-award' : /review/i.test(t) ? 't-rev' : '';
 // a bare file name is looked up in pdfBase; anything with a slash (or a full URL) is used as written
 const pdfHref = (f, base) => /\//.test(f) ? f : (base || '') + f;
 let uid = 0;

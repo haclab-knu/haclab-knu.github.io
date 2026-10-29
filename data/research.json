@@ -5,6 +5,13 @@
   "topic": "Physical agents that perceive and act in real-time, safely, on onboard computers",
   "projects": [
    {
+    "title": "VLA 기반 피지컬 AI 모델 경량화 기술",
+    "sponsor": "Kongju National University",
+    "period": "2026–2027",
+    "role": "PI",
+    "ongoing": true
+   },
+   {
     "title": "대형산불 초기 긴급 대응을 위한 군집 드론 및 운용 기술개발",
     "sponsor": "Korea Forestry Promotion Institute (한국임업진흥원)",
     "period": "2025–2026",
